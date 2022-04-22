@@ -1,0 +1,9 @@
+header {
+    background-color: #27a0cc;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+main {
+    border-style: solid;
+}
