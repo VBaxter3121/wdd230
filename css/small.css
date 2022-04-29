@@ -1,9 +1,16 @@
+body {
+    font-family: 'BIZ UDPMincho', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
 header {
     background-color: #39D7FE;
     color: #000;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
     max-width: 350px;
@@ -19,6 +26,8 @@ main ul {
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
     padding: 20px;
+    list-style: none;
+    text-align: center;
 }
 footer {
     background-color: #39D7FE;
