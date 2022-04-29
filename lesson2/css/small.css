@@ -22,7 +22,7 @@ section {
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,max-content) minmax(max-content,auto);
+    grid-auto-rows: max-content;
     grid-gap: 1rem;
     justify-items: center;;
     margin: 1rem;
