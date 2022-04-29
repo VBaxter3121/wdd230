@@ -8,7 +8,7 @@ header {
     background-color: #39D7FE;
     border-radius: 1rem;
     margin: auto;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 main {
     display: grid;
@@ -22,15 +22,16 @@ section {
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,max-content) minmax(max-content,auto);
     grid-gap: 1rem;
-    justify-items: center;
+    justify-items: center;;
     margin: 1rem;
     background-color: rgb(245, 245, 245);
     padding: 0 1rem;
 }
 h3 {
     background-color: rgb(41, 112, 179);
-    margin-top: 0;
+    margin: 0;
     border-radius: 3px 3px 0px 0px;
     width: 100%;
     text-align: center;
