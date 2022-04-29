@@ -14,18 +14,18 @@ header {
     align-items: center;
     justify-items: center;
     max-width: 350px;
-    padding: 20px;
+    padding: 1rem;
     margin: auto;
 }
 main {
     max-width: 350px;
-    padding: 20px;
+    padding: 1rem;
     margin: auto;
 }
 main ul {
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
-    padding: 20px;
+    padding: 1rem;
     list-style: none;
     text-align: center;
 }
@@ -34,7 +34,7 @@ footer {
     color: #000;
     border-radius: 10px;
     max-width: 350px;
-    padding: 20px;
+    padding: 1rem;
     margin: auto;
     text-align: center;
 }
