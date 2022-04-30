@@ -45,9 +45,30 @@ img {
 }
 p {
     padding: 1rem;
+}
+main p {
     width: 80%;
 }
 footer {
     background-color: #39D7FE;
     border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+footer a {
+    background-color: rgb(41, 112, 179);
+    color: #fff;
+    border-radius: 2px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+footer p {
+    margin: 0;
+}
+span {
+    display: flex;
+    justify-content: flex-start;
+}
+a:hover {
+    background-color: #fff;
+    color: rgb(41, 112, 179);
 }
