@@ -89,3 +89,15 @@ img {
 .logo {
     margin: -200px;
 }
+footer {
+    background-color: #97EFE9;
+    color: #2B4570;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+footer p {
+    padding: 1rem;
+}
+footer a {
+    margin: 1rem;
+}
