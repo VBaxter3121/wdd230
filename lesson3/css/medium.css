@@ -1,0 +1,9 @@
+@media (min-width: 65em) {
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    nav ul li {
+        flex: 1 1 auto;
+    }
+}

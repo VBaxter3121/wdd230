@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Arvo', serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#poppins-heading {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 3rem;
+}
+#arvo-paragraph {
+    font-family: 'Arvo', serif;
+}
+header {
+    background-color: #97EFE9;
+    color: #2B4570;
+    display: block;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 1rem;
+}
+nav ul li {
+    margin: 2.5rem;
+    min-width: 150px;
+}
+a {
+    text-decoration: none;
+    background-color: #7180AC;
+    color: #000;
+    padding: 1rem;
+    border-radius: 5px;
+}
+a:hover {
+    background-color: #2B4570;
+    color: #fff;
+}
+main {
+    max-width: 60%;
+    margin: 2rem auto;
+    background-color: #DDFFFD;
+    border-radius: 20px;
+    padding: 1rem;
+}
+main ul {
+    padding: 2rem;
+}
+h2 {
+    margin: 1rem;
+    text-align: center;
+}
+p {
+    margin: 1rem;
+}
+h3 {
+    margin: 1rem;
+}
+img {
+    margin: 1rem;
+}
+.inner-main {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+}
+#colours p {
+    padding: 1rem;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+#colour1 {
+    background-color: #97EFE9;
+}
+#colour2 {
+    background-color: #7180AC;
+}
+#colour3 {
+    background-color: #2B4570;
+    color: #fff;
+}
+#colour4 {
+    background-color: #DDFFFD;
+}
+.logo {
+    margin: -200px;
+}
