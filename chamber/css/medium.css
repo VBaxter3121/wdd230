@@ -1,22 +1,9 @@
 @media only screen and (min-width: 40em) {
-    nav button {
-        margin: 0 2vw;
-    }
-    nav ul#main-nav {
-        display: flex;
-        border-left: 1px solid rgba(0,0,0,0.3);
-        margin: 0 2vw;
-    }
     nav ul li a {
-        border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
-    }
-    #hamburger {
-        display: none;
     }
     main {
         display: grid;
-
     }
     .join {
         display: block;
