@@ -31,7 +31,7 @@ let [modDay, modDate, modMonth, modYear] = [
     lastUpdated.getMonth(),
     lastUpdated.getFullYear()
 ];
-copyright.innerHTML = `<li>&copy; ${year} Southampton Chamber</li><li><strong>Vincent Baxter</strong></li><li>WDD 230 Project</li>`;
+copyright.innerHTML = `<li>&copy; ${year} Southampton Chamber</li><li>Vincent Baxter</li><li>WDD 230 Project</li>`;
 modified.innerHTML = `Last Updated: ${weekday[modDay]}, ${modDate} ${months[modMonth]} ${modYear}`;
 
 

@@ -1,4 +1,12 @@
 @media only screen and (min-width: 70em) {
+    nav ul#main-nav {
+        display: flex;
+        border-left: 1px solid rgba(0,0,0,0.3);
+        margin: 0 2vw;
+    }
+    #hamburger {
+        display: none;
+    }
     nav ul li a {
         padding: 0.5rem 2vw;
     }
