@@ -25,11 +25,14 @@ htmlDate.innerHTML = `${weekday[day]}, ${date} ${months[month]} ${year}`
 const copyright = document.querySelector(".copyright");
 const modified = document.querySelector(".modified");
 let lastUpdated = new Date(document.lastModified);
-let [modDay, modDate, modMonth, modYear] = [
+let [modDay, modDate, modMonth, modYear, modHour, modMinute, modSecond] = [
     lastUpdated.getDay(),
     lastUpdated.getDate(),
     lastUpdated.getMonth(),
-    lastUpdated.getFullYear()
+    lastUpdated.getFullYear(),
+    lastUpdated.getHours(),
+    lastUpdated.getMinutes(),
+    lastUpdated.getSeconds()
 ];
 copyright.innerHTML = `<li>&copy; ${year} Southampton Chamber</li><li>Vincent Baxter</li><li>WDD 230 Project</li>`;
-modified.innerHTML = `Last Updated: ${weekday[modDay]}, ${modDate} ${months[modMonth]} ${modYear}`;
+modified.innerHTML = `Last Updated: ${weekday[modDay]}, ${modDate} ${months[modMonth]} ${modYear} ${modHour}:${modMinute}:${modSecond}`;
