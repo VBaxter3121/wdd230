@@ -94,7 +94,7 @@ main {
 .spotlights {
     border: 1px solid rgba(0,0,0,0.2);
     margin: 1rem;
-    background-color: rgba(221, 255, 253,);
+    background-color: rgba(221, 255, 253);
 }
 .spotlights section {
     margin: 1rem;
