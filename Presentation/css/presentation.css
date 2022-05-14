@@ -1,0 +1,14 @@
+p {
+    background-color: blueviolet;
+    color: gold;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2em;
+}
+.blue {
+    background-color: blue;
+}
+#italic {
+    font-style: italic;
+    background-color: red;
+}
