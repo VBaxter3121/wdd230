@@ -1,4 +1,4 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 55em) {
     nav ul li a {
         border-right: 1px solid rgba(0,0,0,0.3);
     }

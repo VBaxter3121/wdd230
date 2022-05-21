@@ -1,14 +1,23 @@
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 80em) {
     nav ul#main-nav {
         display: flex;
-        border-left: 1px solid rgba(0,0,0,0.3);
         margin: 0 2vw;
     }
     #hamburger {
         display: none;
     }
+    nav ul li a:nth-last-of-type(1) {
+        border-left: 1px solid rgba(0,0,0,0.3);
+    }
+    nav ul li:nth-of-type(5) {
+        border-bottom: none;
+    }
     nav ul li a {
         padding: 0.5rem 2vw;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+    }
+    main {
+        grid-template-columns: 1fr 2fr 1fr;
     }
     .spot3 {
         display: block;
@@ -18,10 +27,13 @@
     }
     .hero {
         grid-area: 1 / 2 / 3 / 4;
+        
     }
     .spotlights {
         grid-area: 1 / 4 / 4 / 5;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .spotlights section {
         width: unset;
@@ -31,6 +43,10 @@
     }
     .join {
         grid-area: 3 / 1 / 4 / 2;
+    }
+    .hero a {
+        top: 4.5rem;
+        padding: 3rem 5rem;
     }
     .news {
         grid-area: 3 / 2 / 4 / 4;

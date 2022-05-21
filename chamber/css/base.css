@@ -34,6 +34,9 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.3);
     transition: 250ms;
 }
+nav ul li:nth-of-type(5) {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
 nav ul li a:hover {
     background-color: rgba(0,0,0,0.5);
     color: #fff;
@@ -84,6 +87,8 @@ main section {
     background-color: #DDFFFD;
     border: 1px solid rgba(0,0,0,0.2);
     margin: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px 0.1rem #7180AC;
 }
 main section h2 {
     padding: .2rem 2vw;
@@ -91,16 +96,73 @@ main section h2 {
 main {
     padding-bottom: 2rem;
 }
+main p {
+    padding: .2rem 2vw;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+main a:hover {
+    background-color: rgba(0,0,0,0.2);
+    color: #000;
+}
 .spotlights {
     border: 1px solid rgba(0,0,0,0.2);
     margin: 1rem;
     background-color: rgba(221, 255, 253);
+    box-shadow: 0 0 10px 0.1rem #7180AC;
 }
 .spotlights section {
     margin: 1rem;
 }
+.spotlights section img {
+    width: 300px;
+    padding: .2rem 2vw;
+}
+.spotlights a {
+    font-size: 1em;
+}
+.spotlights section p:nth-of-type(1) {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    font-style: italic;
+    font-size: 1.2em;
+}
 .spot3, .join {
     display: none;
+}
+#weather-flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em 0;
+    font-size: 2em;
+    align-items: center;
+}
+#weather-flex img {
+    width: 160px;
+    height: 100%;
+    padding: 1rem;
+}
+.hero img {
+    margin: 1rem;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+.join-button {
+    padding: 1rem 3rem;
+    background-color: #35fc03;
+    color: #fff;
+    border-radius: 1rem;
+}
+.hero a {
+    position: relative;
+    bottom: 5rem;
+    padding: 2rem 6rem;
+}
+.join p:nth-of-type(2) {
+    padding: 1rem 0;
 }
 footer {
     background-color: #97EFE9;
