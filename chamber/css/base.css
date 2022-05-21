@@ -144,22 +144,35 @@ main a:hover {
     height: 100%;
     padding: 1rem;
 }
-.hero img {
-    margin: 1rem;
-    display: block;
-    margin: auto;
-    width: 80%;
-}
 .join-button {
     padding: 1rem 3rem;
     background-color: #35fc03;
     color: #fff;
     border-radius: 1rem;
 }
+.hero {
+    background-image: url("../images/southampton-test.jpg");
+    background-position: right;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .hero a {
     position: relative;
-    bottom: 5rem;
     padding: 2rem 6rem;
+    margin: 2rem 30%;
+    min-width: 100px;
+}
+.hero a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.hero h2 {
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 1rem;
+    margin: 1rem 20%;
 }
 .join p:nth-of-type(2) {
     padding: 1rem 0;
@@ -187,4 +200,10 @@ footer a {
     line-height: 1.5em;
     list-style: none;
     padding: 0;
+}
+#banner {
+    text-align: center;
+    display: none;
+    background-color: #7180AC;
+    padding: .2rem 2vw;
 }

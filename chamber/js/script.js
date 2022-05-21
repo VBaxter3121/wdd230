@@ -36,3 +36,9 @@ let [modDay, modDate, modMonth, modYear, modHour, modMinute, modSecond] = [
 ];
 copyright.innerHTML = `<li>&copy; ${year} Southampton Chamber</li><li>Vincent Baxter</li><li>WDD 230 Project</li>`;
 modified.innerHTML = `Last Updated: ${weekday[modDay]}, ${modDate} ${months[modMonth]} ${modYear} ${modHour}:${modMinute}:${modSecond}`;
+
+if (day == 1 || day == 2) {
+    const banner = document.querySelector("#banner");
+    banner.style.display = "block";
+    console.log("Test")
+}
