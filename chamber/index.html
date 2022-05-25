@@ -20,7 +20,7 @@
         <div class="large-header">
             <div class="title">
                 <picture>
-                    <img src="images/logo.png" alt="Southampton Chamber Logo" width="100">
+                    <img src="images/logo.webp" alt="Southampton Chamber Logo" width="100">
                 </picture>
                 <section>
                     <h1>Southampton</h1>
@@ -51,6 +51,11 @@
     </div>
     <main>
         <section class="hero">
+            <img src="images/wdd230-org.webp" alt="wdd230 photo"
+            srcset="images/wdd230-small.webp 479w,
+            images/wdd230-medium.webp 767w,
+            images/wdd230-large.webp 1900w
+            ">
             <h2>Welcome to Southampton</h2>
             <a href="#" class="join-button">Join Us Now</a>
         </section>
@@ -62,10 +67,15 @@
         </section>
         <section class="weather">
             <h2>Weather</h2>
-            <div id="weather-flex">
-                <img src="images/weather-icon.png" alt="Rain cloud icon">
-                <p>12°C<br><br>Light Rain</p>
-            </div>
+                <div id="weather-flex">
+                    <img src="images/weather-icon.png" alt="Rain cloud icon">
+                    <p><span id="temp">9</span>°C</p>
+                </div>
+                <p>Light Rain</p>
+                <div id="wind">
+                    <p>Wind Speed: <span id="windspeed">5.5</span>km/h</p>
+                    <p>Windchill: <span id="windchill"></span>°C</p>
+                </div>
         </section>
         <section class="news">
             <h2>News Release</h2>
@@ -103,7 +113,7 @@
     </main>
     <footer>
         <ul class="info">
-            <li class="footer-logo"><img src="images/logo.png" alt="Southampton Chamber Logo" width="200"></li>
+            <li class="footer-logo"><img src="images/logo.webp" alt="Southampton Chamber Logo" width="200"></li>
             <li class="footer-title"><em>Southampton Chamber of Commerce</em></li>
             <li>30A Carlton Pl, Southampton SO15 2DX</li>
             <li>info@southamptoncc.co.uk</li>
@@ -115,6 +125,6 @@
             <p class="modified"></p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>

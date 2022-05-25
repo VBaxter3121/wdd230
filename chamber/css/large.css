@@ -28,6 +28,9 @@
     .hero {
         grid-area: 1 / 2 / 3 / 4;
     }
+    .hero h2 {
+        margin-top: 5rem;
+    }
     .spotlights {
         grid-area: 1 / 4 / 4 / 5;
         display: flex;
@@ -45,6 +48,7 @@
     }
     .hero a {
         padding: 1rem 3rem;
+        margin-bottom: 5rem;
     }
     .news {
         grid-area: 3 / 2 / 4 / 4;

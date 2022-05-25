@@ -83,6 +83,12 @@ nav button {
 .social-links {
     margin-left: auto;
 }
+.social-links ul li a img{
+    transition: 250ms;
+}
+.social-links ul li a img:hover {
+    background-color: rgba(0,0,0,0.5);
+}
 main section {
     background-color: #DDFFFD;
     border: 1px solid rgba(0,0,0,0.2);
@@ -118,7 +124,8 @@ main a:hover {
     margin: 1rem;
 }
 .spotlights section img {
-    width: 300px;
+    width: 80%;
+    max-width: 383px;
     padding: .2rem 2vw;
 }
 .spotlights a {
@@ -132,17 +139,28 @@ main a:hover {
 .spot3, .join {
     display: none;
 }
+.weather {
+    overflow: auto;
+    font-size: 1.5em;
+}
 #weather-flex {
     display: flex;
-    justify-content: space-evenly;
-    margin: 1em 0;
-    font-size: 2em;
+    justify-content: space-around;
     align-items: center;
 }
-#weather-flex img {
-    width: 160px;
-    height: 100%;
-    padding: 1rem;
+#weather-flex p {
+    font-weight: bold;
+}
+#wind {
+    text-align: left;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+#wind span {
+    text-align: right;
+}
+.weather img {
+    width: 40%;
+    max-width: 200px;
 }
 .join-button {
     padding: 1rem 3rem;
@@ -151,13 +169,18 @@ main a:hover {
     border-radius: 1rem;
 }
 .hero {
-    background-image: url("../images/southampton-test.jpg");
+    /*background-image: url("../images/southampton.webp");*/
+    background-repeat: no-repeat;
     background-position: right;
     min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+/*For srcset */
+.hero img {
+    width: 100%;
 }
 .hero a {
     position: relative;

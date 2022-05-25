@@ -20,6 +20,7 @@
     .event, .weather {
         order: 1;
     }
+
     .event {
         grid-column: span 2;
     }
