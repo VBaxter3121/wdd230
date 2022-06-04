@@ -16,7 +16,7 @@
         padding: 0.5rem 2vw;
         border-bottom: 1px solid rgba(0,0,0,0.3);
     }
-    main {
+    main#home {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .spot3 {
@@ -60,5 +60,19 @@
     }
     .modified {
         padding-left: 1rem;
+    }
+    figcaption {
+        font-size: 2em;
+    }
+    #gallery figure {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #gallery figure:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    #gallery figure img {
+        width: 50%;
     }
 }

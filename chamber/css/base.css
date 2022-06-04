@@ -169,7 +169,7 @@ main a:hover {
     border-radius: 1rem;
 }
 .hero {
-    /*background-image: url("../images/southampton.webp");*/
+    background-image: url("../images/southampton.webp");
     background-repeat: no-repeat;
     background-position: right;
     min-height: 300px;
@@ -178,10 +178,10 @@ main a:hover {
     justify-content: space-between;
     align-items: center;
 }
-/*For srcset */
+/* For srcset
 .hero img {
     width: 100%;
-}
+} */
 .hero a {
     position: relative;
     padding: 2rem 6rem;
@@ -229,4 +229,34 @@ footer a {
     display: none;
     background-color: #7180AC;
     padding: .2rem 2vw;
+}
+#gallery figure img {
+    filter: blur(0em);
+    transition: .5s;
+    width: 90%;
+    padding: 0.5em;
+    margin-top: 3rem;
+    background-color: #7180AC;
+    border-radius: .75em;
+}
+#gallery figure img[data-src] {
+    filter: blur(0.2em);
+}
+figcaption {
+    font-size: 1em;
+    font-style: italic;
+    color: #2B4570;
+    margin: 1rem 2rem 3rem 2rem;
+}
+#days-since {
+    font-size: 2em;
+    margin: 0;
+}
+#statistics ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    text-align: left;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
