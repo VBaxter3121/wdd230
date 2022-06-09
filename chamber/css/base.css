@@ -171,7 +171,7 @@ main a:hover {
 .hero {
     background-image: url("../images/southampton.webp");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     min-height: 300px;
     display: flex;
     flex-direction: column;

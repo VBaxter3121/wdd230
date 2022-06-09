@@ -1,0 +1,46 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+table {
+    border-collapse: collapse;
+    box-shadow: 10px 10px 15px rgb(64, 128, 158);
+    margin: auto;
+}
+table, th, td {
+    border: 1px solid rgb(66, 66, 66);
+}
+thead, tfoot {
+    background-color: rgb(109, 202, 218);
+}
+thead th {
+    font-weight: bolder;
+    padding: .5rem 1rem;
+}
+thead tr:nth-child(1) {
+    font-size: 1.75em;
+}
+thead tr:nth-child(2) {
+    background-color: rgb(64, 128, 158);
+    color: #fff;
+}
+tbody tr:nth-child(even) {
+    background-color: rgb(209, 255, 212);
+}
+tbody tr:nth-child(odd) {
+    background-color: rgb(238, 238, 238);
+}
+tbody th {
+    font-weight: normal;
+    padding: .2rem .5rem;
+}
+tfoot th {
+    font-size: 0.9em;
+    padding: .5rem;
+    font-weight: normal;
+}
+.goalMet {
+    background-color: rgb(64, 128, 158);
+    color: #fff;
+}
