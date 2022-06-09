@@ -44,3 +44,6 @@ tfoot th {
     background-color: rgb(64, 128, 158);
     color: #fff;
 }
+.italic {
+    font-style: italic;
+}
