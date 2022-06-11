@@ -75,4 +75,16 @@
     #gallery figure img {
         width: 50%;
     }
+    main#joinForm {
+        max-width: 80rem;
+        margin: auto;
+    }
+    form label.sbs, form p {
+        padding: .4rem;
+        display: inline;
+    }
+    form div#formGrid {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
 }

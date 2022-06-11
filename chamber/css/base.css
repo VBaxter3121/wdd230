@@ -110,7 +110,7 @@ main a {
     font-weight: bold;
     font-size: 1.5em;
 }
-main a:hover {
+main a:hover, form input.submitBtn:hover {
     background-color: rgba(0,0,0,0.2);
     color: #000;
 }
@@ -259,4 +259,58 @@ figcaption {
     text-align: left;
     padding-left: 3rem;
     padding-right: 3rem;
+}
+/*---Form---*/
+form fieldset {
+    margin: 1rem 0;
+    background-color: #DDFFFD;
+    border: none;
+    box-shadow: 0 0 10px 0.1rem #7180AC;
+}
+form legend {
+    padding: .5rem;
+    color: #2B4570;
+    padding-top: 3rem;
+}
+form label.top, form label.sbs {
+    display: block;
+    font-size: .8rem;
+    padding: .75rem;
+}
+form p {
+    font-size: .8rem;
+    margin: 0;
+    border-bottom: 1px solid #2B4570;
+}
+form label.top input, form label.top textarea {
+    display: block;
+    padding: .75rem;
+    width: 90%;
+    max-width: 20rem;
+    background-color: #ebfcfb;
+    border: 1px solid #000;
+}
+form input.submitBtn {
+    margin: 1rem 0 2rem 2%;
+    border: none;
+    border-radius: 1rem;
+    background-color: #148a02;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+form label.sbs input {
+    margin-left: .2rem;
+}
+form label.top input:required {
+    border: solid 2px red;
+}
+form label.top input:required:valid {
+    border: solid 2px green;
+}
+form p#requiredFields {
+    padding: .75rem;
+    border: none;
+}
+main p#thanks {
+    text-align: center;
 }
