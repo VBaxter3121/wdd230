@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+}
+h1, h2 {
+    font-family: "Georgia", Times, serif;
+    color: #5B0B0B;
+}
+p {
+    font-family: Verdana, Helvetica, sans-serif;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+}
+.cards section {
+    background-color: rgb(228, 165, 72);
+    max-width: 600px;
+    border: 2px solid rgb(51, 37, 16);
+}
+.cards section img {
+    box-shadow: 0 0 20px #555;
+}
