@@ -267,6 +267,11 @@ form fieldset {
     border: none;
     box-shadow: 0 0 10px 0.1rem #7180AC;
 }
+form .membershipLevels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 form legend {
     padding: .5rem;
     color: #2B4570;
@@ -276,11 +281,6 @@ form label.top, form label.sbs {
     display: block;
     font-size: .8rem;
     padding: .75rem;
-}
-form p {
-    font-size: .8rem;
-    margin: 0;
-    border-bottom: 1px solid #2B4570;
 }
 form label.top input, form label.top textarea {
     display: block;

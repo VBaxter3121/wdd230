@@ -49,25 +49,29 @@
     <main id="joinForm">
         <form method="get" action="thankyou.html">
             <fieldset>
-                <legend>Personal Information</legend>
-                <p id="requiredFields">Fields marked with * are required</p>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Business Position <input type="text" name="title" pattern="[A-z0-9- ]{8,}"></label>
-                <label class="top">E-mail Address* <input type="email" name="email" placeholder="someone@example.com" required></label>
-                <label class="top">Telephone Number* <input type="tel" name="phone" placeholder="12355551234" required></label>
+                <div class="personalInfo">
+                    <legend>Personal Information</legend>
+                    <p id="requiredFields">Fields marked with * are required</p>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Business Position <input type="text" name="title" pattern="[A-z0-9- ]{8,}"></label>
+                    <label class="top">E-mail Address* <input type="email" name="email" placeholder="someone@example.com" required></label>
+                    <label class="top">Telephone Number* <input type="tel" name="phone" placeholder="12355551234" required></label>
+                </div>
+                <div class="membershipLevels">
+                    <p><strong>Non-Profit Membership - No fee</strong><br>Access to Chamber resources</p>
+                    <p><strong>Bronze Membership - £1000 + VAT Anually</strong><br>Access to Chamber resources, Training opportunities</p>
+                    <p><strong>Silver Membership - £2000 + VAT Anually</strong><br>Access to Chamber resources, Training opportunities, Home page spotlight advertising</p>
+                    <p><strong>Gold Membership - £3000 + VAT Anually</strong><br>Access to Chamber resources, Training opportunities, Home page spotlight advertising, Chamber event discounts</p>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Membership Level*</legend>
-                <div id="formGrid">
+                <div>
                     <label class="sbs"><input type="radio" name="membership" value="npmember" required> Non-Profit Membership</label>
-                    <p><strong>No fee</strong> - Access to Chamber resources</p>
                     <label class="sbs"><input type="radio" name="membership" value="bronzemember" required> Bronze Membership</label>
-                    <p><strong>£1000 + VAT Anually</strong> - Access to Chamber resources, Training opportunities</p>
                     <label class="sbs"><input type="radio" name="membership" value="silvermember" required> Silver Membership</label>
-                    <p><strong>£2000 + VAT Anually</strong> - Access to Chamber resources, Training opportunities, Home page spotlight advertising</p>
                     <label class="sbs"><input type="radio" name="membership" value="goldmember" required> Gold Membership</label>
-                    <p><strong>£3000 + VAT Anually</strong> - Access to Chamber resources, Training opportunities, Home page spotlight advertising, Chamber event discounts</p>
                 </div>
             </fieldset>
             <fieldset>
