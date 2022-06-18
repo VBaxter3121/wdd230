@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 Vincent Baxter Southampton Chamber of Commerce Project Home Page">
+    <meta name="description" content="WDD 230 Vincent Baxter Southampton Chamber of Commerce Project Directory Page">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Poppins&display=swap" rel="stylesheet">
-    <title>Southampton Chamber | Home</title>
+    <title>Southampton Chamber | Directory</title>
 </head>
 <body>
     <header>
@@ -46,8 +46,16 @@
         </div>
         <p id="date"></p>
     </header>
-    <main>
-        <p id="thanks">Thank you for your application! We will be in touch within the next 5 working days!</p>
+    <div id="banner">
+        <p>Come join us for the chamber meet and greet on Wednesday at 19:00</p>
+    </div>
+    <main class="directory">
+        <h2>Business Directory</h2>
+        <section>
+            <button id="gridBtn">Grid view</button>
+            <button id="listBtn">List view</button>
+            <div id="businesses" class="cards"></div>
+        </section>
     </main>
     <footer>
         <ul class="info">
@@ -64,6 +72,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/directory.js"></script>
 </body>
 </html>

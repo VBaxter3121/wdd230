@@ -70,4 +70,22 @@
         display: grid;
         grid-template-columns: 50% 50%;
     }
+    /*---Directory---*/
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2rem;
+        row-gap: 2rem;
+        padding-bottom: 2rem;
+    }
+    .cards section {
+        height: 100%;
+        margin-bottom: 4rem;
+    }
+    .list section {
+        grid-template-columns: 30% repeat(3, 1fr);
+    }
+    .list p {
+        display: block;
+    }
 }

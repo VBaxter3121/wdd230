@@ -1,0 +1,76 @@
+{
+    "businesses": [
+        {
+            "name": "Confectionary Kingdom",
+            "address": "111 St Denys Rd, Southampton SO17 2FS",
+            "phone": "023 8105 0153",
+            "url": "confectionarykingdom.co.uk",
+            "image": "images/confectionary-kingdom-logo.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Whittle-Woods",
+            "address": "68A Hill Ln, Southampton SO15 5BA",
+            "phone": "023 8167 1725",
+            "url": "whittlewoods.co.uk",
+            "image": "images/whittle-woods-logo.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Pipe Dreams",
+            "address": "Unit 9 M3 Trade Park, Manor Way, Eastleigh SO50 9YA",
+            "phone": "023 8160 3856",
+            "url": "pipedreamsplumbing.co.uk",
+            "image": "images/pipe-dreams-logo.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "BLU",
+            "address": "25 Padwell Rd, Southampton SO14 6QY",
+            "phone": "023 7896 1844",
+            "url": "blu.co.uk",
+            "image": "images/blu.webp",
+            "membership": "silver"
+        },
+        {
+            "name": "Sparkles",
+            "address": "36 W Quay Rd, Southampton SO15 1QD",
+            "phone": "023 6873 1874",
+            "url": "sparklesjewellery.co.uk",
+            "image": "images/sparkles.webp",
+            "membership": "bronze"
+        },
+        {
+            "name": "Dungeon Workshop",
+            "address": "59 Above Bar St, Southampton SO14 7DZ",
+            "phone": "023 6841 1897",
+            "url": "dungeonworkshop.co.uk",
+            "image": "images/dungeon-workshop.webp",
+            "membership": "bronze"
+        },
+        {
+            "name": "Looking Glass Studio",
+            "address": "122a, St Denys Road, Southampton, SO17 2FQ",
+            "phone": "023 4968 1385",
+            "url": "looking-glass-studio.co.uk",
+            "image": "images/looking-glass.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Krafty",
+            "address": "Gaters Mill, Mansbridge Rd, West End, Southampton SO18 3HW",
+            "phone": "023 7811 6869",
+            "url": "kraftyhandcrafts.co.uk",
+            "image": "images/krafty.webp",
+            "membership": "bronze"
+        },
+        {
+            "name": "Manson & Sons",
+            "address": "27 Bradley Grn, Southampton SO16 5HY",
+            "phone": "023 0254 5490",
+            "url": "mansonelectrical.co.uk",
+            "image": "images/manson.webp",
+            "membership": "silver"
+        }
+    ]
+}
