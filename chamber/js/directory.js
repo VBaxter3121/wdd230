@@ -15,11 +15,13 @@ function displayBusinesses(business) {
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let image = document.createElement("img");
+    let membership = document.createElement("p");
     let address = document.createElement("p");
     let phone = document.createElement("p");
     let businessURL = document.createElement("a");
 
     name.textContent = business.name;
+    membership.textContent = `${business.membership} level member`;
     address.textContent = business.address;
     phone.textContent = business.phone;
     businessURL.textContent = business.url;
@@ -30,6 +32,7 @@ function displayBusinesses(business) {
     image.setAttribute("loading", "lazy");
 
     card.appendChild(name);
+    card.appendChild(membership);
     card.appendChild(image);
     card.appendChild(address);
     card.appendChild(phone);

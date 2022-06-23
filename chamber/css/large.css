@@ -99,8 +99,4 @@
         padding: 1rem;
         grid-template-columns: 15% repeat(4, 1fr);
     }
-    .list img {
-        display: block;
-        max-width: 400px;
-    }
 }
