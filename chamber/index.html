@@ -67,22 +67,21 @@
         </section>
         <section class="weather">
             <h2>Weather</h2>
-                <div id="weather-flex">
-                    <img src="images/weather-icon.png" alt="Rain cloud icon">
-                    <p><span id="temp">9</span>°C</p>
-                </div>
-                <p>Light Rain</p>
+                <figure id="weather-flex"w>
+                    <img src="" alt="" id="weather-icon">
+                    <figcaption><span id="current-temp"></span>&deg;C</figcaption>
+                </figure>
+                <p id="weather-desc"></p>
                 <div id="wind">
-                    <p>Wind Speed: <span id="windspeed">5.5</span>km/h</p>
-                    <p>Windchill: <span id="windchill"></span>°C</p>
+                    <p>Wind Speed: <span id="wind-speed"></span>km/h</p>
+                    <p>Windchill: <span id="windchill"></span></p>
                 </div>
         </section>
         <section class="news">
             <h2>News Release</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Nobis necessitatibus explicabo ipsam fugit porro repellat 
-                autem harum dolore temporibus. Ex, veritatis rerum esse nisi 
-                eligendi odit harum tempora sunt voluptate!</p>
+            <p>Motorists are being urged to avoid driving past Southampton docks today due to "severe congestion".<br><br>
+                The warning has been issued by Southampton City Council's travel updates service, which earlier this 
+                morning predicted the waterfront would be "busy" due to several cruise ships arriving and departing.</p>
         </section>
         <div class="spotlights">
             <section>
@@ -120,12 +119,13 @@
             <li>023 8021 1513</li>
             <li><a href="https://goo.gl/maps/eqWDPVWTyCjbF77Y9">Map</a></li>
         </ul>
+        <p>Weather information thanks to openweathermap.org</p>
         <div class="sub-footer">
             <ul class="copyright"></ul>
             <p class="modified"></p>
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>

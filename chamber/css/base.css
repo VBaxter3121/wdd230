@@ -159,8 +159,7 @@ main a:hover, form input.submitBtn:hover {
     text-align: right;
 }
 .weather img {
-    width: 40%;
-    max-width: 200px;
+    
 }
 .join-button {
     padding: 1rem 3rem;
