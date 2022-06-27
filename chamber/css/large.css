@@ -87,6 +87,9 @@
         display: grid;
         grid-template-columns: 1fr 5fr;
     }
+    form #radio label {
+        display: block;
+    }
     /*---Directory---*/
     .cards {
         grid-template-columns: 1fr 1fr 1fr;

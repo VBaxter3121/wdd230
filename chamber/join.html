@@ -20,7 +20,7 @@
         <div class="large-header">
             <div class="title">
                 <picture>
-                    <img src="images/logo.webp" alt="Southampton Chamber Logo" width="100">
+                    <a href="index.html"><img src="images/logo.webp" alt="Southampton Chamber Logo" width="100"></a>
                 </picture>
                 <section>
                     <h1>Southampton</h1>
@@ -65,27 +65,29 @@
                     <p><strong>Gold Membership - £3000 + VAT Anually</strong><br>Access to Chamber resources, Training opportunities, Chamber event discounts, Home page spotlight advertising</p>
                 </div>
             </fieldset>
-            <fieldset>
-                <legend>Membership Level*</legend>
-                <div>
-                    <label class="sbs"><input type="radio" name="membership" value="npmember" required> Non-Profit Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="bronzemember" required> Bronze Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="silvermember" required> Silver Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="goldmember" required> Gold Membership</label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Business Information</legend>
-                <label class="top">Business Name/Title* <input type="text" name="bname" required></label>
-                <label class="top">Briefly descibe your business <textarea name="businessdesc" id="businessDesc" cols="50" rows="4"></textarea></label>
-            </fieldset>
+            <div id="lowerForm">
+                <fieldset>
+                    <legend>Membership Level*</legend>
+                    <div id="radio">
+                        <label class="sbs"><input type="radio" name="membership" value="npmember" required> Non-Profit Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="bronzemember" required> Bronze Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="silvermember" required> Silver Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="goldmember" required> Gold Membership</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top">Business Name/Title* <input type="text" name="bname" required></label>
+                    <label class="top">Briefly descibe your business <textarea name="businessdesc" id="businessDesc" cols="50" rows="4"></textarea></label>
+                </fieldset>
+            </div>
             <input type="hidden" name="datetime" id="hiddenDate" value="CurrentDateAndTime">
             <input type="submit" value="Apply for membership" class="submitBtn">
         </form>
     </main>
     <footer>
         <ul class="info">
-            <li class="footer-logo"><img src="images/logo.webp" alt="Southampton Chamber Logo" width="200"></li>
+            <li class="footer-logo"><a href="index.html"><img src="images/logo.webp" alt="Southampton Chamber Logo" width="200"></a></li>
             <li class="footer-title"><em>Southampton Chamber of Commerce</em></li>
             <li>30A Carlton Pl, Southampton SO15 2DX</li>
             <li>info@southamptoncc.co.uk</li>
