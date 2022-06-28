@@ -158,9 +158,6 @@ main a:hover, form input.submitBtn:hover {
 #wind span {
     text-align: right;
 }
-.weather img {
-    
-}
 .join-button {
     padding: 1rem 3rem;
     background-color: #148a02;
@@ -363,4 +360,14 @@ main p#thanks {
 }
 .list p {
     display: none;
+}
+/*---Contact---*/
+
+.contact {
+    padding: 0;
+    padding-left: 1rem;
+    margin: 1rem;
+}
+.contact h2 {
+    padding-left: .75rem;
 }

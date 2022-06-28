@@ -102,4 +102,11 @@
         padding: 1rem;
         grid-template-columns: 15% repeat(4, 1fr);
     }
+    /*---Contact---*/
+    #contact-main form {
+        margin-left: 10rem;
+    }
+    #contact-main section {
+        margin-right: 10rem;
+    }
 }

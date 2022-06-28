@@ -70,6 +70,9 @@
         display: grid;
         grid-template-columns: 50% 50%;
     }
+    form fieldset.contact {
+        display: block;
+    }
     #lowerForm {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -92,5 +95,10 @@
     }
     .list p {
         display: block;
+    }
+    /*---Contact---*/
+    #contact-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

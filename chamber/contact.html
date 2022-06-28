@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 Vincent Baxter Southampton Chamber of Commerce Project Directory Page">
+    <meta name="description" content="WDD 230 Vincent Baxter Southampton Chamber of Commerce Project Contact Page">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -13,15 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Poppins&display=swap" rel="stylesheet">
-    <title>Southampton Chamber | Directory</title>
+    <title>Southampton Chamber | Contact</title>
 </head>
 <body>
     <header>
         <div class="large-header">
             <div class="title">
-                <picture>
-                    <a href="index.html"><img src="images/logo.webp" alt="Southampton Chamber Logo" width="100"></a>
-                </picture>
+                <a href="index.html">
+                    <picture>
+                        <img src="images/logo.webp" alt="Southampton Chamber Logo" width="100">
+                    </picture>
+                </a>
                 <section>
                     <h1>Southampton</h1>
                     <p>Chamber of Commerce</p>
@@ -38,9 +40,9 @@
                 <ul id="main-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,12 +51,24 @@
     <div id="banner">
         <p>Come join us for the chamber meet and greet on Wednesday at 19:00</p>
     </div>
-    <main class="directory">
+    <main id="contact-main">
+        <form method="get" action="thankyou-contact.html">
+            <fieldset class="contact">
+                <h2>Contact Form</h2>
+                <label class="top">Name* <input type="text" name="name" required></label>
+                <label class="top">E-mail Address* <input type="email" name="email" required></label>
+                <label class="top">Message <textarea name="message" id="contact-message" cols="30" rows="10"></textarea></label>
+                <input type="submit" value="Send Message" class="submitBtn">
+            </fieldset>
+        </form>
         <section>
-            <h2>Business Directory</h2>
-            <button id="gridBtn">Grid view</button>
-            <button id="listBtn">List view</button>
-            <div id="businesses" class="cards"></div>
+            <h2>Contact Us</h2>
+            <h3>Address</h3>
+            <p>30A Carlton Pl, Southampton SO15 2DX</p>
+            <h3>Phone</h3>
+            <p>023 8021 1513</p>
+            <h3>E-mail Address</h3>
+            <p>info@southamptoncc.co.uk</p>
         </section>
     </main>
     <footer>
@@ -66,12 +80,13 @@
             <li>023 8021 1513</li>
             <li><a href="https://goo.gl/maps/eqWDPVWTyCjbF77Y9">Map</a></li>
         </ul>
+        <p>Weather information thanks to openweathermap.org</p>
         <div class="sub-footer">
             <ul class="copyright"></ul>
             <p class="modified"></p>
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/directory.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
