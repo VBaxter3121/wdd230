@@ -54,9 +54,9 @@
                     <p id="requiredFields">Fields marked with * are required</p>
                     <label class="top">First Name* <input type="text" name="fname" required></label>
                     <label class="top">Last Name* <input type="text" name="lname" required></label>
-                    <label class="top">Business Position <input type="text" name="title" pattern="[A-z0-9- ]{8,}"></label>
+                    <label class="top">Business Position <input type="text" name="title" pattern="[A-z0-9 -]{8,}"></label>
                     <label class="top">E-mail Address* <input type="email" name="email" placeholder="someone@example.com" required></label>
-                    <label class="top">Telephone Number* <input type="tel" name="phone" placeholder="12355551234" required></label>
+                    <label class="top">Telephone Number* <input type="tel" name="phone" pattern="[0-9]{11}" placeholder="00123456789" required></label>
                 </div>
                 <div class="membershipLevels">
                     <p><strong>Non-Profit Membership - No fee</strong><br>Access to Chamber resources</p>
