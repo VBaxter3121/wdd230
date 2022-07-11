@@ -1,0 +1,44 @@
+{
+    "temples": [
+        {
+            "name": "Cardston, Alberta Temple",
+            "address": "348 3rd St W, Cardston AB T0K 0K0, Canada",
+            "phone": "(1) 403-653-3552",
+            "services": "Clothing rental available|No cafeteria available|No patron housing available|Distribution center nearby",
+            "history": "27 June 1913 - Announced|27 July 1913 - Groundbreaking|26 August 1923 - Dedicated|2 July 1962 - Rededicated|22 June 1991 - Rededicated",
+            "prayers": "https://www.churchofjesuschrist.org/temples/details/cardston-alberta-temple/prayer/1923-08-26|https://www.churchofjesuschrist.org/temples/details/cardston-alberta-temple/prayer/1962-07-02|https://www.churchofjesuschrist.org/temples/details/cardston-alberta-temple/prayer/1991-06-22",
+            "schedule": "Due to the COVID-19 pandemic, the ordinance schedule is subject to change, and patrons are asked to book an appointment. Please visit https://www.churchofjesuschrist.org/temples/details/cardston-alberta-temple?lang=eng for more information.",
+            "closure-schedule": "2022|Monday, 19 September 2022 - Monday, 3 October 2022|Friday, 11 November 2022|Saturday, 24 December 2022 - Tuesday, 27 December 2022|Saturday, 31 December 2022"
+        },
+        {
+            "name": "Manhattan, New York Temple",
+            "address": "125 Columbus Ave, Fourth Floor, New York NY 10023-6514, United States",
+            "phone": "(1) 917-441-8220",
+            "services": "Clothing rental available|No cafeteria available|No patron housing available|Distribution center nearby",
+            "history": "7 August 2002 - Announced|23 September 2002 - Groundbreaking|13 June 2004 - Dedicated",
+            "prayers": "https://www.churchofjesuschrist.org/temples/details/manhattan-new-york-temple/prayer/2004-06-13?lang=eng",
+            "schedule": "Due to the COVID-19 pandemic, the ordinance schedule is subject to change, and patrons are asked to book an appointment. Please visit https://www.churchofjesuschrist.org/temples/details/manhattan-new-york-temple?lang=eng for more information.",
+            "closure-schedule": "2022|Monday, 25 July 2022 - Monday, 8 August 2022|Saturday, 1 October 2022 - Sunday, 2 October 2022|Thursday, 24 November 2022 - Friday, 25 November 2022|Saturday, 24 December 2022|Saturday, 31 December 2022"
+        },
+        {
+            "name": "Oaxaca, Mexico Temple",
+            "address": "Av. Universidad # 139|Fracc. Real de Candiani|68130 Oaxaca, Oaxaca, Mexico",
+            "phone": "(52) 951-516-9588",
+            "services": "No clothing rental available|No cafeteria available|No patron housing available|Distribution center nearby",
+            "history": "23 February 1999 - Announced|13 March 1999 - Groundbreaking|11 March 2000 - Dedicated",
+            "prayers": "https://www.churchofjesuschrist.org/temples/details/oaxaca-mexico-temple/prayer/2000-03-11?lang=eng",
+            "schedule": "Due to the COVID-19 pandemic, the ordinance schedule is subject to change, and patrons are asked to book an appointment. Please visit https://www.churchofjesuschrist.org/temples/details/oaxaca-mexico-temple?lang=eng for more information.",
+            "closure-schedule": "2022|Monday, 29 August 2022 - Monday, 12 September 2022|Saturday, 1 October 2022|Saturday, 24 December 202|Saturday, 31 December 2022"
+        },
+        {
+            "name": "Salt Lake, Utah Temple",
+            "address": "50 W North Temple St|Salt Lake City UT 84150-9709|United States",
+            "phone": "N/A",
+            "services": "N/A",
+            "history": "28 July 1847 - Announced|14 February 1853 - Groundbreaking|6 April 1893 - Dedicated",
+            "prayers": "https://www.churchofjesuschrist.org/temples/details/salt-lake-temple/prayer/1893-04-06",
+            "schedule": "Due to the COVID-19 pandemic, the ordinance schedule is subject to change, and patrons are asked to book an appointment. Please visit https://www.churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng for more information.",
+            "closure-schedule": "The Salt Lake Temple is currently closed for rennovations"
+        }
+    ]
+}

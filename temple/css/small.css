@@ -1,0 +1,105 @@
+/* ---Global--- */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Signika Negative', sans-serif;
+    color: #263254;
+    margin-left: 2rem;
+}
+
+
+/* ---Header--- */
+header {
+    background-color: #6279B8;
+    overflow: auto;
+}
+header img {
+    height: 150px;
+    padding: 1rem;
+    float: left;
+}
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 4rem 0 0 10rem;
+}
+
+/* ---Nav--- */
+nav {
+    margin-top: .4rem;
+    text-align: right;
+}
+button {
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    margin-right: 1rem;
+}
+nav ul {
+    /* display: none; */
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+nav a {
+    background-color: #3F548D;
+    color: #eee;
+    text-decoration: none;
+    font-size: 2em;
+    border: 2px solid #263254;
+    border-top: none;
+    display: block;
+    padding-left: 1rem;
+    margin: 0 1rem;
+}
+nav a:hover {
+    background-color: #263254;
+}
+nav a:nth-of-type(1) {
+    border-top: 2px solid #263254;
+}
+
+
+/* ---Main--- */
+figure {
+    margin-left: 2rem;
+}
+a {
+    margin-left: 2rem;
+}
+/* ~~~Contact~~~ */
+#contact {
+    margin-left: 2rem;
+}
+#contact h2 {
+    margin: 0;
+}
+
+/* ~~~Gallery~~~ */
+#home-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 15rem;
+    text-align: center;
+}
+.gallery {
+    background-color: #FF7D00;
+    padding: .3rem .3rem 0 .3rem;
+    box-shadow: 0 0 10px 10px #FF7D00;
+}
+.gallery img {
+    height: 270px;
+}
+/* ---Footer--- */
+footer {
+    background-color: #6279B8;
+    display: flex;
+    justify-content: center;
+}
+.details-align {
+    width: 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
