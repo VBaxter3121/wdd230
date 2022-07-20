@@ -17,11 +17,11 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/logo.webp" alt="The Temple Inn logo"></a>
+        <a href="index.html" class="logo"><img src="images/logo.webp" alt="The Temple Inn logo"></a>
         <h1>The Temple Inn & Suites</h1>
         <nav>
-            <button class="hamburger"><span>&#9776;</span><span>&#10005;</span></button>
-            <ul>
+            <button id="hamburger"><span>&#9776;</span><span>&#10005;</span></button>
+            <ul id="nav-ul">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="temple.html">Temple</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
@@ -29,27 +29,25 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="home-book">
+    <main id="home-main">
+        <div id="home-book">
             <h2>Discover our rooms and suites, perfectly suited to your temple trip</h2>
             <figure>
                 <img src="images/hotel-room.webp" alt="Hotel room">
             </figure>
             <a href="reservation.html">Book Now</a>
-        </section>
-        <aside id="contact">
+        </div>
+        <aside class="contact-details">
             <h2>Contact Us</h2>
-            <!--Lines up the contact details-->
-            <div class="details-align">
-                <p class="contact">Tel. </p>
-                <p class="contact">+1 301-719-5483</p>
-                <p class="contact">E-mail. </p>
-                <p class="contact">inquirys@templeinn.com</p>
+            <p>+1 301-719-5483</p>
+            <p class="email">inquirys@templeinn.com</p>
+            <div class="address">
+                <p>4800 Montgomery Ln</p>
+                <p>#300</p>
+                <p>Bethesda</p>
+                <p>MD 20814</p>
             </div>
-            <p class="address">4800 Montgomery Ln</p>
-            <p class="address">#300</p>
-            <p class="address">Bethesda</p>
-            <p class="address">MD 20814</p>
+            <p><a href="https://www.google.co.uk/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814,+USA/@38.983259,-77.0965906,18z/data=!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">Map</a></p>
             <a href="https://www.facebook.com/" class="social"><img src="images/facebook-logo.webp" alt="Facebook Logo" width="50"></a>
             <a href="https://www.instagram.com/?hl=en" class="social"><img src="images/instagram-logo.webp" alt="Instagram Logo" width="50"></a>
         </aside>
@@ -66,14 +64,15 @@
         </article>
         <aside id="weather">
             <div id="current-weather">
-                <h2>Weather</h2>
+                <h3>Today's Weather</h3>
             </div>
-            <div id="forecast-weather">
-                <h3>3-Day Forecast</h3>
-            </div>
+            <!-- <div id="forecast-weather"> -->
+                <div id="tomorrow"></div>
+                <div id="after-tomorrow"></div>
+            <!-- </div> -->
         </aside>
-        <h2>Images</h2>
-        <section id="home-gallery">
+        <div id="home-gallery">
+            <h2>Gallery</h2>
             <figure class="gallery">
                 <img src="images/cardston-temple.webp" alt="Cardstone temple">
                 <figcaption>Cardston, Alberta, Canada Temple</figcaption>
@@ -90,27 +89,28 @@
                 <img src="images/oaxaca-temple.webp" alt="Oaxaca temple">
                 <figcaption>Oaxaca, Mexico Temple</figcaption>
             </figure>
-        </section>
+        </div>
     </main>
     <footer>
-        <section>
-            <h2>Contact Us</h2>
-            <!--Lines up the contact details-->
-            <div class="details-align">
-                <p class="contact">Tel. </p>
-                <p class="contact">+1 301-719-5483</p>
-                <p class="contact">E-mail. </p>
-                <p class="contact">inquiries@templeinn.com</p>
-                <a href="https://www.facebook.com/" class="social"><img src="images/facebook-logo.webp" alt="Facebook Logo" width="50"></a>
-                <a href="https://www.instagram.com/?hl=en" class="social"><img src="images/instagram-logo.webp" alt="Instagram Logo" width="50"></a>
-            </div>
-        </section>
-        <section>
-            <p class="address">4800 Montgomery Ln</p>
-            <p class="address">#300</p>
-            <p class="address">Bethesda</p>
-            <p class="address">MD 20814</p>
-        </section>
+        <h2>Contact Us</h2>
+        <aside class="contact-details">
+                <p>+1 301-719-5483</p>
+                <p class="email">inquirys@templeinn.com</p>
+                <div class="address">
+                    <p>4800 Montgomery Ln</p>
+                    <p>#300</p>
+                    <p>Bethesda</p>
+                    <p>MD 20814</p>
+                    <a href="attributions.html" class="text-link">Attributions</a>
+                </div>
+                <p><a href="https://www.google.co.uk/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814,+USA/@38.983259,-77.0965906,18z/data=!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318" class="text-link">Map</a></p>
+                <div>
+                    <a href="https://www.facebook.com/" class="social"><img src="images/facebook-logo.webp" alt="Facebook Logo" width="50"></a>
+                    <a href="https://www.instagram.com/?hl=en" class="social"><img src="images/instagram-logo.webp" alt="Instagram Logo" width="50"></a>
+                </div>
+                <p class="modified"></p>
+        </aside>
     </footer>
+    <script src="js/main-script.js" type="module"></script>
 </body>
 </html>

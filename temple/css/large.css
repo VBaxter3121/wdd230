@@ -1,0 +1,81 @@
+@media only screen and (min-width: 81em) {
+    /* ---Header--- */
+    /* ---Nav--- */
+    nav ul {
+        display: flex;
+        width: 40%;
+        margin: auto;
+    }
+    nav a {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 1rem;
+        margin: 0;
+    }
+    #hamburger {
+        display: none;
+    }
+    /* ---Main--- */
+    #reservations {
+        width: 65%;
+        margin: auto;
+    }
+    /* #home-book a,
+    .services a,
+    .missionary a {
+        width: 15%;
+    } */
+    #subpages {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #subpages a {
+        margin: 0;
+    }
+    main.services {
+        width: 60%;
+        margin: auto;
+    }
+    /* ~~~Home Page~~~ */
+    #home-main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #home-book {
+        grid-area: 1 / 2 / 2 / 4;
+    }
+    #home-book img {
+        max-width: 765px;
+    }
+    #home-main.contact-details {
+        grid-area: 2 / 1 / 4 / 2;
+    }
+    #summary {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    #weather {
+        grid-area: 2 / 2 / 3 / 4;
+        display: flex;
+    }
+    #home-gallery {
+        grid-area: 3 / 1 / 4 / 4;
+        justify-items: center;
+    }
+    #home-book a,
+    .services a,
+    .missionary a {
+        width: auto;
+    }
+    /* ~~~Temple~~~ */
+    #temple-cards {
+        display: flex;
+    }
+    #temple-cards div {
+        margin: 1rem;
+    }
+    /* ~~~Services~~~ */
+    .gallery {
+        width: 50%;
+        margin: auto;
+    }
+    /* ---Footer--- */
+}

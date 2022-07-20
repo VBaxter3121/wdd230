@@ -13,14 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>The Temple Inn | Reservation</title>
+    <title>The Temple Inn | Reservations</title>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="images/logo.webp" alt="The Temple Inn logo"></a>
         <h1>The Temple Inn & Suites</h1>
         <nav>
-            <ul>
+            <button id="hamburger"><span>&#9776;</span><span>&#10005;</span></button>
+            <ul id="nav-ul">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="temple.html">Temple</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
@@ -28,10 +29,10 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="reservations">
         <h2>Reserve your room</h2>
+        <h3>Important</h3>
         <section>
-            <h3>Important</h3>
             <ul>
                 <li>If you are booking one of our long-term kitchenette suites, there is no need to specify
                     a departure date
@@ -46,37 +47,37 @@
             </ul>
         </section>
         <form method="get" action="confirmation.html">
+            <p>Required fields marked with *</p>
             <fieldset>
                 <legend>Details of your stay:</legend>
-                <p>Required fields marked with *</p>
                 <label>Which temple are you visiting? *
-                    <select name="temple" required>
-                        <option value="empty">--Please Select an Option--</option>
+                    <select class="long-input" name="temple" required>
+                        <option value="">--Please Select an Option--</option>
                         <option value="cardston">Cardston, Canada Temple</option>
                         <option value="manhattan">Manhattan, New York Temple</option>
                         <option value="oaxaca">Oaxaca, Mexico Temple</option>
                         <option value="salt-lake">Salt Lake, Utah Temple</option>
                     </select>
                 </label>
-                <label>Number of rooms *<input type="text" required></label>
+                <label>Number of rooms *<input class="long-input" type="number" required></label>
                 <div>
                     <p>Room type *</p>
-                    <label><input type="radio" name="room-type" value="short" required> Short-term</label>
-                    <label><input type="radio" name="room-type" value="long" required> Long-term</label>
+                    <label class="radio"><input type="radio" name="room-type" value="short" required> Short-term</label>
+                    <label class="radio"><input type="radio" name="room-type" value="long" required> Long-term</label>
                 </div>
-                <label>Arrival date *<input type="date" name="arrival" required></label>
-                <!--Departure date hidden unless short-term stay is selected-->
-                <label id="departure">Departure date *<input type="date" name="departure"></label>
+                <label>Arrival date *<input class="long-input" type="date" name="arrival" required></label>
+                <!-- Departure date hidden unless short-term stay is selected
+                <label id="departure">Departure date *<input class="long-input" type="date" name="departure"></label> -->
             </fieldset>
             <fieldset>
                 <legend>Personal details:</legend>
-                <label>First name *<input type="text" name="f-name" required></label>
-                <label>Last name *<input type="text" name="l-name" required></label>
-                <label>E-mail address *<input type="email" name="email" required></label>
-                <label>Phone number *<input type="tel" name="phone" pattern="[0-9+]" required></label>
+                <label>First name *<input class="long-input" type="text" name="f-name" pattern="[A-z -]{1,}" required></label>
+                <label>Last name *<input class="long-input" type="text" name="l-name" pattern="[A-z -]{1,}" required></label>
+                <label>E-mail address *<input class="long-input" type="email" name="email" required></label>
+                <label>Phone number *<input class="long-input" type="tel" name="phone" pattern="[0-9+]{8,}" required></label>
                 <label>Country *
-                    <select name="country" required>
-                        <option value="empty" selected>Select a country</option>
+                    <select class="long-input" id="country-select" name="country" required>
+                        <option value="" selected>Select a country</option>
                         <option value="AF">Afghanistan</option>
                         <option value="AL">Albania</option>
                         <option value="DZ">Algeria</option>
@@ -319,8 +320,9 @@
                     </select>
                 </label>
                 <!--State field hidden unless United States is selected-->
-                <label name="state">State *
-                    <select>
+                <label name="state" id="state">State *
+                    <select class="long-input" id="state-select">
+                        <option value="" selected>Select a state</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -377,30 +379,31 @@
             </fieldset>
             <fieldset>
                 <legend>Other information:</legend>
-                <label>Special requirements/other information<textarea name="additional"cols="50" rows="3"></textarea></label>
+                <label>Special requirements/other information<textarea class="long-input" name="additional"cols="50" rows="3"></textarea></label>
             </fieldset>
-            <input type="submit" value="Book your stay">
+            <input class="submit" type="submit" value="Book your stay">
         </form>
     </main>
     <footer>
-        <section>
-            <a href="https://www.facebook.com/" class="social"><img src="images/facebook-logo.webp" alt="Facebook Logo" width="50"></a>
-            <a href="https://www.instagram.com/?hl=en" class="social"><img src="images/instagram-logo.webp" alt="Instagram Logo" width="50"></a>
-            <p class="address">4800 Montgomery Ln</p>
-            <p class="address">#300</p>
-            <p class="address">Bethesda</p>
-            <p class="address">MD 20814</p>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <!--Lines up the contact details-->
-            <div class="details-align">
-                <p class="contact">Tel. </p>
-                <p class="contact">+1 301-719-5483</p>
-                <p class="contact">E-mail. </p>
-                <p class="contact">inquiries@templeinn.com</p>
-            </div>
-        </section>
+        <h2>Contact Us</h2>
+        <aside class="contact-details">
+                <p>+1 301-719-5483</p>
+                <p class="email">inquirys@templeinn.com</p>
+                <div class="address">
+                    <p>4800 Montgomery Ln</p>
+                    <p>#300</p>
+                    <p>Bethesda</p>
+                    <p>MD 20814</p>
+                    <a href="attributions.html" class="text-link">Attributions</a>
+                </div>
+                <p><a href="https://www.google.co.uk/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814,+USA/@38.983259,-77.0965906,18z/data=!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318" class="text-link">Map</a></p>
+                <div>
+                    <a href="https://www.facebook.com/" class="social"><img src="images/facebook-logo.webp" alt="Facebook Logo" width="50"></a>
+                    <a href="https://www.instagram.com/?hl=en" class="social"><img src="images/instagram-logo.webp" alt="Instagram Logo" width="50"></a>
+                </div>
+                <p class="modified"></p>
+        </aside>
     </footer>
+    <script src="js/main-script.js" type="module"></script>
 </body>
 </html>

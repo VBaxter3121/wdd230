@@ -6,11 +6,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Signika Negative', sans-serif;
     color: #263254;
-    margin-left: 2rem;
+    margin: 1rem 2rem;
 }
 
 
 /* ---Header--- */
+.popup {
+    background-color: #FF7D00;
+}
+.popup h2 {
+    color: #000;
+}
+.popup p {
+    margin-left: 2rem;
+}
 header {
     background-color: #6279B8;
     overflow: auto;
@@ -22,8 +31,9 @@ header img {
 }
 h1 {
     color: #fff;
-    font-size: 3rem;
-    margin: 4rem 0 0 10rem;
+    font-size: 2rem;
+    text-align: right;
+    margin: 4rem 2rem 0 10rem;
 }
 
 /* ---Nav--- */
@@ -38,7 +48,7 @@ button {
     margin-right: 1rem;
 }
 nav ul {
-    /* display: none; */
+    display: none;
     list-style: none;
     padding: 0;
     text-align: left;
@@ -60,46 +70,213 @@ nav a:hover {
 nav a:nth-of-type(1) {
     border-top: 2px solid #263254;
 }
+/* ~~~Menu~~~ */
+#hamburger {
+    font-size: 3rem;
+}
+#hamburger span:nth-child(2){
+    display: none;
+}
+#hamburger span:nth-child(1){
+    display: block;
+}
+#hamburger.open span:nth-child(1){
+    display: none;
+}
+#hamburger.open span:nth-child(2){
+    display: block;
+}
+#nav-ul.open {
+    display: block;
+}
 
 
 /* ---Main--- */
 figure {
     margin-left: 2rem;
 }
-a {
+figcaption {
+    margin-top: 1rem;
+}
+main img {
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 2px #aaa;
+    padding: .5rem;
+}
+main ul {
+    padding-left: 0;
+}
+main section {
     margin-left: 2rem;
 }
-/* ~~~Contact~~~ */
-#contact {
-    margin-left: 2rem;
+img {
+    max-width: 375px;
 }
-#contact h2 {
-    margin: 0;
-}
-
-/* ~~~Gallery~~~ */
-#home-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 15rem;
+#confirm {
     text-align: center;
 }
-.gallery {
-    background-color: #FF7D00;
-    padding: .3rem .3rem 0 .3rem;
-    box-shadow: 0 0 10px 10px #FF7D00;
+/* ~~~Home Page Booking~~~ */
+#home-book img, #summary img {
+    width: 90%;
 }
+#home-book a,
+.services a,
+.missionary a,
+.submit {
+    display: inline-block;
+    margin: 0 auto 1rem 2rem;
+    padding: 1rem 2rem;
+    background-color: #FF7D00;
+    border: 2px solid #B85900;
+    border-radius: .5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#home-book a:hover {
+    background-color: #B85900;
+}
+/* ~~~Contact~~~ */
+.contact-details {
+    margin: 0 0 2rem 2rem;
+}
+.contact-details h2 {
+    margin-left: 0;
+}
+.contact-details .social:nth-of-type(2) {
+    margin-left: 2rem;
+}
+#summary, #weather {
+    margin-bottom: 2rem;
+}
+.email {
+    font-style: italic;
+}
+.address {
+    border-top: 3px solid #263254;
+}
+/* Remove styling from social media icons */
+.social img {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+/* ~~~Gallery~~~ */
 .gallery img {
-    height: 270px;
+    width: 90%;
+}
+/* ~~~Weather~~~ */
+#weather h3, #weather h4 {
+    margin: 0;
+}
+#weather {
+    text-align: center;
+}
+#current-weather,
+#tomorrow,
+#after-tomorrow {
+    border: 3px solid #263254;
+    margin: 1rem auto;
+    width: 75%;
+}
+/* ~~~Form~~~ */
+form p {
+    margin-left: 2rem;
+}
+fieldset {
+    padding-left: 1.6rem;
+    margin-left: .2rem;
+}
+fieldset p {
+    margin-left: 0;
+}
+form label {
+    margin-bottom: .5rem;
+}
+form label,
+.long-input {
+    display: block;
+    margin: 0 0 .5rem 0;
+}
+.long-input {
+    width: 80%;
+    padding: .5rem;
+}
+.radio input {
+    display: inline;
+}
+.submit {
+    margin: 1rem 0 0 2rem;
+}
+/* ~~~Form Validation~~~ */
+.long-input:required {
+    background-color: #ffcccc;
+}
+.long-input:required:valid {
+    background-color: #fff;
+}
+#state {
+    display: none;
+}
+#state.state-shown {
+    display: block;
+}
+/* ~~~Services~~~ */
+.services p,
+.services ul,
+.reception p,
+.missionary p {
+    margin: 1rem 2rem;
+}
+.services a {
+    width: 55%;
+}
+.services a:hover {
+    background-color: #263254;
+}
+/* ~~~Temple~~~ */
+#temple-cards h3 {
+    text-align: center;
+}
+#temple-info {
+    margin-left: 2rem;
+}
+#temple-cards div {
+    border: 5px solid #263254;
+    border-radius: .5rem;
+    width: 90%;
+    margin: 1rem auto;
+}
+#temple-cards img {
+    width: 90%;
+    display: block;
+    margin: 1rem auto;
+}
+.temple-p {
+    display: none;
+}
+.temple-p-show {
+    display: block;
+    border-bottom: 2px solid #263254;
+    text-align: center;
+}
+span.off {
+    display: none;
 }
 /* ---Footer--- */
 footer {
     background-color: #6279B8;
-    display: flex;
     justify-content: center;
 }
-.details-align {
-    width: 15rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+footer .contact-details {
+    margin-bottom: 0;
+}
+footer h2 {
+    padding-top: 1rem;
+}
+a.text-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #263254;
+    padding: 0.1rem;
 }

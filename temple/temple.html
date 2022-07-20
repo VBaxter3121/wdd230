@@ -13,14 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>The Temple Inn | Homepage</title>
+    <title>The Temple Inn | Temples</title>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="images/logo.webp" alt="The Temple Inn logo"></a>
         <h1>The Temple Inn & Suites</h1>
         <nav>
-            <ul>
+            <button id="hamburger"><span>&#9776;</span><span>&#10005;</span></button>
+            <ul id="nav-ul">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="temple.html">Temple</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
@@ -30,27 +31,29 @@
     </header>
     <main>
         <h2>Temple Information</h2>
+        <p id="temple-info">Click on a temple for more information</p>
         <div id="temple-cards"></div>
     </main>
     <footer>
-        <section>
-            <a href="https://www.facebook.com/" class="social"><img src="images/facebook-logo.webp" alt="Facebook Logo" width="50"></a>
-            <a href="https://www.instagram.com/?hl=en" class="social"><img src="images/instagram-logo.webp" alt="Instagram Logo" width="50"></a>
-            <p class="address">4800 Montgomery Ln</p>
-            <p class="address">#300</p>
-            <p class="address">Bethesda</p>
-            <p class="address">MD 20814</p>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <!--Lines up the contact details-->
-            <div class="details-align">
-                <p class="contact">Tel. </p>
-                <p class="contact">+1 301-719-5483</p>
-                <p class="contact">E-mail. </p>
-                <p class="contact">inquiries@templeinn.com</p>
-            </div>
-        </section>
+        <h2>Contact Us</h2>
+        <aside class="contact-details">
+                <p>+1 301-719-5483</p>
+                <p class="email">inquirys@templeinn.com</p>
+                <div class="address">
+                    <p>4800 Montgomery Ln</p>
+                    <p>#300</p>
+                    <p>Bethesda</p>
+                    <p>MD 20814</p>
+                    <a href="attributions.html" class="text-link">Attributions</a>
+                </div>
+                <p><a href="https://www.google.co.uk/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814,+USA/@38.983259,-77.0965906,18z/data=!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318" class="text-link">Map</a></p>
+                <div>
+                    <a href="https://www.facebook.com/" class="social"><img src="images/facebook-logo.webp" alt="Facebook Logo" width="50"></a>
+                    <a href="https://www.instagram.com/?hl=en" class="social"><img src="images/instagram-logo.webp" alt="Instagram Logo" width="50"></a>
+                </div>
+                <p class="modified"></p>
+        </aside>
     </footer>
+    <script src="js/main-script.js" type="module"></script>
 </body>
 </html>
