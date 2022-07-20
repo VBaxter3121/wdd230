@@ -14,8 +14,6 @@ export async function weather() {
 }
 
 function displayWeather(data) {
-    console.log(data);
-
     let alert = data.alerts;
     if (alert != undefined) {
         let alertName = data.alerts.event;
@@ -74,7 +72,6 @@ function displayWeather(data) {
     afterTomorrowHeader.textContent = afterTomorrowStr;
     tomorrowDiv.appendChild(tomorrowHeader);
     afterTomorrowDiv.appendChild(afterTomorrowHeader);
-    console.log(afterTomorrowStr)
 
     days.forEach((day) => {
 
